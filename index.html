@@ -14,17 +14,17 @@
 
   <div class="container" >
       <p >初始本金</p>
-      <input id="p1" type="text" value="" placeholder="輸入本金如：1000">
+      <input id="amount" type="text" value="" placeholder="輸入本金如：1000">
   </div>
 
    <div class="container" >
       <p>投放天數</p>
-      <input id="p2" type="text" value="" placeholder="輸入天數如：30">
+      <input id="days" type="text" value="" placeholder="輸入天數如：30">
   </div>
 
    <div class="container" >
       <p>年化利率</p>
-      <input id="p3" type="text" value="" placeholder="輸入利率如：20">
+      <input id="apy" type="text" value="" placeholder="輸入利率如：20">
   </div>
 
     <div class="container">
@@ -32,12 +32,9 @@
     </div>
     
     <div class="container">
-      <input class="button" type="button" value="點此計算" onclick="cal();"> 
+      <input class="button" type="button" value="點此計算" onclick="runApyApp()"> 
     </div>
    
-
-   
-  
     <div id="notice">
      <p>注意事項：</p>
       <ol>
