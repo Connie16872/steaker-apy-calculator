@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>APY 計算機</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+
+  <div id="headbox">
+      <h1>APY 計算機</h1>
+  </div>
+
+    
+  <div class="container" >
+      <p >初始本金</p>
+      <input id="p1" type="text" value="" placeholder="輸入本金如：1000">
+  </div>
+
+   <div class="container" >
+      <p>投放天數</p>
+      <input id="p2" type="text" value="" placeholder="輸入天數如：30">
+  </div>
+
+   <div class="container" >
+      <p>年化利率</p>
+      <input id="p3" type="text" value="" placeholder="輸入利率如：20">
+  </div>
+
+    <div class="container">
+      <p id="answer">點擊下方按鈕，計算期滿後可獲得的金額</p>
+    </div>
+    
+    <div class="container">
+      <input class="button" type="button" value="點此計算" onclick="cal();"> 
+    </div>
+   
+    
+   
+  
+    <div id="notice">
+     <p>注意事項：</p>
+      <ol>
+        <li>年化利率 APY 欄位不需輸入 %。</li>
+        <li>年化利率 APY 適用時機：方案利息以「複利」計算。</li>
+        <li>約期天數依照申購當日起算。
+          <br>  
+            舉例：2/1 開始投放，約期 3 個月，實際天數為 28+31+30=89 天。     </li>
+        <li>期滿後可獲得金額的公式：
+          <br>      
+            初始資金 * ( 1 + APY% ) ^ ( 約期天數 / 365 )    
+          <br> 
+            舉例：方案 A：初始本金 1000 USDT，投放天數 30 天，APY=15%；
+           <br> 
+            期滿可獲得：1000*(1+15%)^(30/365)= 1011.553515 USDT (本金加利息)      
+        </li>
+      </ol>
+  </div>
+</div>
+
+    
+    <script src="script.js"></script>
+    
+  </body>
+  
+</html>
+
