@@ -1,5 +1,9 @@
 # Steaker APY Calculator
 
-Author: connie16872
+- Author: Connie Teng
 
-## [Demo](https://apy-calculator.netlify.app/)
+Using JavaScript to build a user-friendly calculator before official website launch this feature.
+
+Check out the [Demo](https://apy-calculator.netlify.app/)
+
+![](apy_demo.png)
